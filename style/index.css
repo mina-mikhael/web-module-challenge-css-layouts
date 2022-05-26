@@ -1,1 +1,337 @@
-/* Add CSS styling here */
+/* Css code reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* My code starts here */
+/* General styles */
+html {
+  font-size: 10px;
+}
+
+body {
+  background-image: url("https://i.stack.imgur.com/yZYef.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: lato;
+  font-size: 2.5rem;
+  font-weight: 350;
+  color: #1f5fb8;
+  min-height: 100%;
+}
+
+h1 {
+  font-size: 5.5rem;
+  text-shadow: 1px 1px 5px #bbe7faa0;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* page title style  */
+
+header h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0c2c7cec;
+  height: 4rem;
+  color: white;
+}
+
+/* page header style */
+header {
+  margin-top: 1rem;
+  width: 98%;
+  margin-left: 0.4%;
+  box-shadow: 5px 5px 5px #183b96;
+  border: 0.5rem solid #183b96;
+  border-radius: 1rem;
+  margin-bottom: 7rem;
+  position: sticky;
+  top: 0;
+}
+
+header .header-main {
+  height: 12vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #183b96;
+  color: white;
+}
+
+/* header nav bar */
+header .nav-bar {
+  display: flex;
+  min-width: 55vw;
+  justify-content: space-evenly;
+  color: white;
+}
+
+header .nav-bar a {
+  color: white;
+}
+header .nav-bar a:hover {
+  background-color: white;
+  color: #183b96;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  font-weight: bold;
+  transition: 0.3s ease-in;
+  border: 3.5px double darkblue;
+}
+
+header h1:hover {
+  text-shadow: none;
+}
+
+/* main page style */
+
+/* upper section */
+
+main .upper-section {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-content: space-between;
+  margin-bottom: 7rem;
+  color: #183b96;
+  text-shadow: 1px 2px 1px #c8e5f6;
+}
+main .upper-section img {
+  border-radius: 1rem;
+  box-shadow: -3px 3px 3px 1px #c8e5f6;
+  width: 85rem;
+  height: 45rem;
+}
+main .upper-section h3 {
+  text-align: center;
+}
+
+main .upper-section span {
+  font-weight: 400;
+  font-style: italic;
+}
+.main-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-between;
+  width: 45rem;
+  line-height: 1.2;
+}
+
+/* lower section */
+
+.lower-section img {
+  width: 35rem;
+  height: 35rem;
+  border-radius: 2.5rem;
+  margin-top: 3rem;
+}
+
+.lower-section img:hover {
+  box-shadow: 2px 0px 7px 3px #baf1ff;
+  width: 36rem;
+  height: 36rem;
+  transition: 0.5s;
+}
+
+.lower-section {
+  text-align: center;
+  color: white;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.lower-section p {
+  margin-top: 1.5rem;
+}
+
+/* footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-between;
+  align-items: center;
+  background-color: #183b96;
+  height: 15rem;
+  color: white;
+  margin-top: 5rem;
+}
+
+footer nav ul {
+  width: 45rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-twitter {
+  color: black;
+  font-size: 4rem;
+  color: #1da1f2;
+  border-radius: 1rem;
+  background-color: white;
+  padding: 0.6rem;
+}
+
+#git {
+  color: black;
+  font-size: 5.5rem;
+}
+
+.fa-solid {
+  color: #fff;
+  font-size: 5.5rem;
+}
+
+footer h3 {
+  font-size: 3rem;
+}
+
+footer i:hover {
+  font-weight: 700;
+}
+
+.fa-solid:hover {
+  font-size: 5.6rem;
+}
